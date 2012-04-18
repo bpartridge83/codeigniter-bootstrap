@@ -1,0 +1,24 @@
+{%- import "Base/macros.html.twig" as macro -%}{% spaceless %}
+<!DOCTYPE html>
+<html lang="" class="{% block html_class %}{% endblock %}">
+	<head> 
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		{# {{ project_robots() }} #}
+		<meta name="robots" content="NOINDEX, NOFOLLOW">
+		
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		
+		<link rel="shortcut icon" href="favicon.ico" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon-precomposed" href="/web/img/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/web/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/web/img/apple-touch-icon-114x114-precomposed.png">
+		
+	</head>
+	
+	<body>{% block body %}{% endblock %}</body>
+	
+</html>{% endspaceless %}

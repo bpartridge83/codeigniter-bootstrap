@@ -1,0 +1,29 @@
+nav, nav  {
+    height: 43px;
+    background: #1069c0;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1658b2), color-stop(1, #0473c7));
+    background: -ms-linear-gradient(bottom, #1658b2, #0473c7);
+    background: -moz-linear-gradient(center bottom, #1658b2 0%, #0473c7 100%);
+}
+
+nav, nav a {
+    color: #fafafa;
+}
+
+nav h1 {
+    font-size: 20px;
+    text-shadow: 0px 0px 2px #094589;
+}
+
+nav input {
+    color: #9acef7;
+    padding: 8px 6px 6px 48px;
+    margin-top: 6px;
+    border: solid 1px #0e468d;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px #3075c4, inset 0px 2px 3px #19559c;
+    background: #1069c0;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #135cad), color-stop(1, #0c59a9));
+    background: -ms-linear-gradient(bottom, #135cad, #0c59a9);0473c7
+    background: -moz-linear-gradient(center bottom, #135cad 0%, #0c59a9 100%);
+}

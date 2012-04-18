@@ -1,0 +1,2 @@
+sudo chmod -R 777 application/cache
+sudo chmod -R 777 web/cache

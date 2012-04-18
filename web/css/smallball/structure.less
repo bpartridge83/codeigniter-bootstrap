@@ -1,0 +1,87 @@
+body {
+    padding-top: 40px;
+    background: url("../img/bg-linen.jpg") center top repeat #fdfdfd;
+}
+
+#header {
+    .wrapper {
+        top: 40px;
+        left: 0;
+        width: 100%;
+        border-bottom: solid 1px #d5d5d5;
+        padding: 18px 0;
+        &.fixed {
+            position: fixed;
+            z-index: 10;
+        }
+    }
+    .pagination {
+        margin: 0;
+        .pull-right;
+        ul {
+          .box-shadow(0 0 1px rgba(0,0,0,.15));
+        }
+    }
+}
+
+#header .wrapper {
+    background: url("../img/bg-linen.jpg") center top repeat #e4e5e7;
+    padding: 20px 0 20px;
+}
+
+#header {
+    h2 {
+        margin-top: -4px;
+    }
+    ul.info {
+        list-style-type: none;
+        margin: 0;
+        li {
+            float: left;
+            margin-right: 20px;
+            padding-left: 22px;
+            line-height: 16px;
+            background: url('../img/info-sprite.png') top left no-repeat transparent;
+            &.conference, &.heightWeight {
+                background-position: left -16px;
+            }
+            &.nickname {
+                background-position: left -32px;
+            }
+            &.school {
+                background-position: left -48px;
+            }
+            &.positions {
+                background-position: left -64px;
+            }
+            &.birthdate {
+                background-position: left -80px;
+            }
+            &.sides {
+                background-position: left -96px;
+            }
+        }
+        small {
+            color: #aaa;
+        }
+        a {
+            color: #333;
+            &:hover {
+                color: #1659B2;
+            }
+        }
+    }
+}
+
+header {
+    margin-bottom: 8px;
+}
+
+#footer {
+    border-top: solid 1px #d5d5d5;
+}
+
+#body, #footer {
+    padding: 18px 0;
+    background: url("../img/bg-noise.jpg") center top repeat #fdfdfd;
+}

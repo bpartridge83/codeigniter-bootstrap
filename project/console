@@ -1,0 +1,39 @@
+#!/usr/bin/env php
+<?php
+
+ini_set('memory_limit', '1000M');
+set_time_limit(86400);
+
+$temp_file = 'tmp/execoutput.txt';
+
+$arguments = $_SERVER["argv"];
+$arguments = array_splice($arguments, 1);
+
+if (strpos($arguments[0], '--') > -1) {
+    switch ($arguments[0]) {
+        case '--prod':
+            $file = 'index.php';
+            break;
+        case '--stag':
+            $file = 'index_staging.php';
+            break;
+        case '--dev':
+        default:
+            $file = 'index_dev.php';
+            break;
+    }
+    $arguments = array_splice($arguments, 1);
+} else {
+    $file = 'index_dev.php';
+}
+
+if (strpos($arguments[0], ':')) {
+    $arguments = explode(':', $arguments[0]);
+    $arguments[0] = strtolower($arguments[0]);
+    $arguments[1] .= 'Action';
+}
+
+$command = 'php '.$file.' '.implode(' ', $arguments).' > '.$temp_file;
+shell_exec($command);
+
+print_r(file_get_contents($temp_file));

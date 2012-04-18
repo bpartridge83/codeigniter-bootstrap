@@ -1,0 +1,7 @@
+name: swift-mailer
+version: 0.1.5
+compatibility: 2.0.1
+
+dependencies: []
+
+tags: ["mail", "email", "mailer"]

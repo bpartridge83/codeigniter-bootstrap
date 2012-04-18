@@ -1,0 +1,5 @@
+{% macro alert(alert) %}
+<div class="alert-message {{ alert.class|default('success') }}">
+    <p><strong>{{ alert.title|default('Success!') }}</strong> {{ alert.summary|default('') }}</p>
+</div>
+{% endmacro %}

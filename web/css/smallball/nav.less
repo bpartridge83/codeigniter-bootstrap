@@ -1,0 +1,156 @@
+.table-nav-pills {
+  padding: 1px 4px;
+  background-color: #fefefe;
+  border: solid 1px #d5d5d5;
+  border-bottom: 0;
+  margin-bottom: 0;
+  li {
+    margin-right: 2px;
+    width: 110px;
+    &.disabled {
+      opacity: 0.4;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .active > a, .active > a:hover {
+    text-shadow: 0px 1px 0px #034d84;
+  }
+  .active small {
+    background-image: url('../img/table-tab-sprite-active.png');
+  }
+  a {
+    text-align: center;
+  }
+  small {
+    display: inline-block;
+    margin: -2px 6px -1px -6px;
+    vertical-align: text-bottom;
+    width: 17px;
+    height: 17px;
+    background: url('../img/table-tab-sprite.png') left top no-repeat transparent;
+    &.pitching {
+      background-position: left -17px;
+    }
+    &.defense {
+      background-position: left -34px;
+    }
+    &.splits {
+      background-position: left -51px;
+    }
+    &.game {
+      background-position: left -68px;
+    }
+    &.play {
+      background-position: left -85px;
+    }
+    &.news {
+      background-position: left -119px;
+    }
+    &.notes {
+      background-position: left -136px;
+    }
+  }
+  a:hover {
+    text-shadow: 0px 1px 0px #fff;
+  }
+}
+
+.nav-tabs.nav-stacked {
+    &> li.active > a, &> li.active > a:hover {
+        border: solid 1px #0069b0;
+        text-shadow: 0px 1px 0px #034d84;
+        #gradient > .vertical(#1c8cdc, #016fbd);
+    }
+    &> li.active > a {
+        color: #acd4f0;
+        box-shadow: inset 0px 1px 0px #12acff;
+        b {
+            color: #fff;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            height: 39px;
+            width: 7px;
+            background: url(../img/nav-tab-arrow.png) top left no-repeat transparent;
+            top: 0;
+            right: -6px;
+        }
+    }
+    &> li {
+        position: relative;
+        border: solid 1px #d5d5d5;
+        &> a {
+            border-radius: 0px !important;
+            border: none;
+            color: #7e7e7e;
+            text-shadow: 0px 1px 0px #fff;
+            background-color: #fff;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            b {
+                color: #222;
+            }
+            &:hover {
+                border: none;
+                #gradient > .vertical(#ffffff, #f5f5f5);
+            }
+        }
+        &.arrow > a {
+            font-size: 12px;
+        }
+        small {
+            width: 16px;
+            height: 16px;
+            margin: -1px 8px -1px -2px;
+            display: inline-block;
+            background: url('../img/sidebar-nav-icons-sprite.v2.png') left -48px no-repeat transparent;
+            vertical-align: top;
+        }
+        &.active small {
+            background-position: right -48px;
+        }
+        &.arrow {
+            small {
+                background-position: left top;
+            }
+            &.active small {
+                background-position: right top;
+            }
+        }
+        &.college {
+            small {
+                background-position: left -16px;
+            }
+            &.active small {
+                background-position: right -16px;
+            }
+        }
+        &.mlb {
+            small {
+                background-position: left -64px;
+            }
+            &.active small {
+                background-position: right -64px;
+            }
+        }
+        &.records {
+            small {
+                background-position: left -32px;
+            }
+            &.active small {
+                background-position: right -32px;
+            }
+        }
+        &.results {
+            small {
+                background-position: left -80px;
+            }
+            &.active small {
+                background-position: right -80px;
+            }
+        }
+    }
+}
